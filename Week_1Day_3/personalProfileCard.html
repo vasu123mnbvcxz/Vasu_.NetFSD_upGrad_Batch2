@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+
+    <style>
+        /* Page Styling */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f6f9;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Card Container */
+        .profile-card {
+            background-color: #ffffff;
+            width: 320px;
+            padding: 25px;              /* Padding inside card */
+            border: 2px solid #ddd;     /* Border */
+            border-radius: 12px;        /* Rounded corners */
+            margin: 20px;               /* Margin from page edges */
+            text-align: center;         /* Text alignment */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        /* Name */
+        .profile-card h2 {
+            margin-bottom: 8px;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;        /* Typography enhancement */
+            text-decoration: underline;
+        }
+
+        /* Role */
+        .profile-card h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            letter-spacing: 0.5px;
+        }
+
+        /* Description */
+        .profile-card p {
+            font-size: 14px;
+            line-height: 1.6;           /* Typography enhancement */
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Button */
+        .profile-card button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            transition: 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .profile-card button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <h2>RAAVI VASU</h2>
+        <h4>FullStack Developer</h4>
+        <p>
+            Passionate web developer specializing in creating responsive and
+            user-friendly interfaces. Focused on clean design, performance,
+            and modern web standards.
+        </p>
+        <button>Contact</button>
+    </div>
+
+</body>
+</html>
