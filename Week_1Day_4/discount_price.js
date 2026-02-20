@@ -12,7 +12,7 @@ function discount(Amount){
         console.log(`The discount Amount : ${discount} and finalAmount : ${finalAmount}`);
     }
     else{
-        console.log(Amount);
+        console.log(`${Amount}`);
     }
 }
 
