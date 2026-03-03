@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker - IndexedDB</title>
+    <script src="expense.js" defer></script>
+</head>
+<body>
+
+    <h2>Expense Tracker</h2>
+
+    <div>
+        <label>Expense Title:</label>
+        <input type="text" id="title">
+    </div>
+    <br>
+
+    <div>
+        <label>Amount:</label>
+        <input type="number" id="amount">
+    </div>
+    <br>
+
+    <div>
+        <label>Date:</label>
+        <input type="date" id="date">
+    </div>
+    <br>
+
+    <button type="button" id="add">Add Expense</button>
+    <button type="button" id="view">View Expenses</button>
+    <button type="button" id="delete">Delete Expense</button>
+
+    <hr>
+
+    <ul id="expenseList"></ul>
+
+</body>
+</html>
