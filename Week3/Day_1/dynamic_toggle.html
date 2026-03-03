@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ Section</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .faq-container {
+            width: 600px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            font-weight: bold;
+            background: #f1f1f1;
+            transition: 0.3s;
+        }
+
+        .question:hover {
+            background: #e2e6ea;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background: #fafafa;
+        }
+
+        /* Highlight active question */
+        .active {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="question">1. What courses do you offer?</div>
+        <div class="answer">We offer Web Development, Data Science, Java, Python, and more.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">2. Do you provide certificates?</div>
+        <div class="answer">Yes, certificates are provided after successful course completion.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">3. Are classes online or offline?</div>
+        <div class="answer">We provide both online and classroom training options.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">4. What is the course duration?</div>
+        <div class="answer">Course duration varies from 1 month to 6 months depending on the program.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">5. Is placement support available?</div>
+        <div class="answer">Yes, we provide placement assistance and interview preparation support.</div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+
+        $(".question").click(function(){
+
+            // Toggle selected answer
+            $(this).next(".answer").slideToggle();
+
+            // Toggle highlight class
+            $(this).toggleClass("active");
+
+            // Optional: Close other open answers
+            $(".question").not(this).removeClass("active");
+            $(".question").not(this).next(".answer").slideUp();
+        });
+
+    });
+</script>
+
+</body>
+</html>
