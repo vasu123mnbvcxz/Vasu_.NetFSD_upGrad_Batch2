@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Layout</title>
+
+    <style>
+        /* ===== Global Styles ===== */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 25px;               /* Box model padding */
+            letter-spacing: 1px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* ===== Main Container ===== */
+        .blog-container {
+            display: flex;               /* Flexbox layout */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;               /* Inner spacing */
+        }
+
+        /* ===== Blog Card ===== */
+        .blog-card {
+            background-color: #ffffff;
+            border: 2px solid #ddd;      /* Border */
+            border-radius: 10px;
+            padding: 20px;               /* Padding */
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Typography Enhancements */
+        .blog-card h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .blog-card p {
+            font-size: 14px;
+            line-height: 1.6;            /* Line height */
+            color: #555;
+        }
+
+        /* Button */
+        .blog-card button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .blog-card button:hover {
+            background-color: #162d6b;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main class="blog-container">
+
+        <div class="blog-card">
+            <h3>Understanding Flexbox</h3>
+            <p>Learn how to build responsive layouts easily using CSS Flexbox and modern layout techniques.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Mastering CSS Grid</h3>
+            <p>Explore the power of CSS Grid to create complex, structured web layouts with minimal effort.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Responsive Web Design</h3>
+            <p>Discover best practices for designing websites that adapt beautifully to all screen sizes.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Modern UI Principles</h3>
+            <p>Improve your design skills with typography, spacing, color theory, and visual hierarchy.</p>
+            <button>Read More</button>
+        </div>
+
+    </main>
+
+</body>
+</html>

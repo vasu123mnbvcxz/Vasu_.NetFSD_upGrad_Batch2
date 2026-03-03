@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Enrollment Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Course Enrollment</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">Courses</a> |
+    <a href="#">Enroll</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Enrollment Form</h2>
+
+        <form>
+
+            <!-- Full Name -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Age -->
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="16" max="60" required>
+            <br><br>
+
+            <!-- Course Selection with Datalist -->
+            <label for="course">Select Course:</label><br>
+            <input list="courses" id="course" name="course" required>
+
+            <datalist id="courses">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Web Development">
+            </datalist>
+            <br><br>
+
+            <!-- Skill Level using Range -->
+            <label for="skill">Skill Level (1 = Beginner, 10 = Advanced):</label><br>
+            <input type="range" id="skill" name="skill" min="1" max="10" required>
+            <br><br>
+
+            <!-- Meter Display -->
+            <label>Skill Level Indicator:</label><br>
+            <meter min="1" max="10" value="5">5 out of 10</meter>
+            <br><br>
+
+            <!-- Enrollment Progress -->
+            <label>Enrollment Completion:</label><br>
+            <progress value="70" max="100">70%</progress>
+            <br><br>
+
+            <!-- Submit -->
+            <input type="submit" value="Enroll Now">
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Learning Platform</p>
+</footer>
+
+</body>
+</html>

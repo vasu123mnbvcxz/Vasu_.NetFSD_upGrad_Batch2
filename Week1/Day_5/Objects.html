@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">Submit</button>
+    <p id="para"></p>
+    <script>
+        const user={
+            name:"vasu",
+            age:24,
+            city:"banglore"
+        };
+        const button=document.getElementById("button");
+        const para=document.getElementById("para");
+        button.addEventListener("click",function(){
+             para.innerHTML = `
+                <p>Name: ${user.name}</p>
+                <p>Age: ${user.age}</p>
+                <p>City: ${user.city}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
